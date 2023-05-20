@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&family=Noto+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #90c9bf;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  letter-spacing: 0.20rem;
+}
+
+.game-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-container > h1 {
+  margin-bottom: 2rem;
+}
+
+#result {
+  margin-bottom: 4rem;
+}
+
+#available-choices {
+  display: flex;
+  justify-content: space-between;
+}
+
+#available-choices > * {
+  cursor: pointer;
+}
+
+#rock-btn > img {
+  transition: .2s ease-in;
+}
+
+#paper-btn > img {
+  transition: .2s ease-in;
+}
+
+#scissors-btn > img {
+  transition: .2s ease-in;
+}
+
+#rock-btn > img:hover {
+  transform: translateY(-4%);
+}
+
+#paper-btn > img:hover {
+  transform: translateY(-4%);
+}
+
+#scissors-btn > img:hover {
+  transform: translateY(-4%);
+}
+
+#reload > p{
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#reload > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
